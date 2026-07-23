@@ -100,8 +100,8 @@
       <!-- Hidden on mobile, flex on large screens -->
       <div class="hidden lg:flex gap-8 text-sm font-semibold text-coffee-700">
         <a href="#welcome" class="hover:text-gold-600 transition-colors">Our Ethos </a>
-        <a href="#speech" class="hover:text-gold-600 transition-colors">Director's Message</a>
         <a href="#programs" class="hover:text-gold-600 transition-colors">Leadership</a>
+        <a href="#speech" class="hover:text-gold-600 transition-colors">Director's Message</a>
         <a href="#contact" class="hover:text-gold-600 transition-colors">Contact</a>
       </div>
       <!-- Hidden on mobile, flex on medium screens and up -->
@@ -116,56 +116,26 @@
   </nav>
 
   <!-- Welcome / Hero Section -->
-  <header id="welcome" class="relative pt-12 pb-20 lg:pt-20 lg:pb-24 flex-grow flex items-center bg-gradient-to-b from-white to-cream-50">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full">
+  <header id="welcome" class="relative pt-12 pb-20 lg:pt-16 lg:pb-24 flex-grow flex flex-col items-center bg-gradient-to-b from-white to-cream-50 px-6">
+    <div class="max-w-5xl w-full mx-auto flex flex-col items-center">
       
-      <!-- Text Content -->
-      <div class="max-w-xl animate-slide-up text-center lg:text-left mx-auto lg:mx-0">
-        
-        <!-- Clean, Inline Badges -->
-        <div class="flex flex-wrap items-center justify-center lg:justify-start gap-3 mb-8">
-          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cream-200/50 border border-cream-200 text-coffee-800 text-xs font-bold uppercase tracking-wider">
-            <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Now Enrolling
-          </div>
-          
-          <!-- FIXED: Gov Approved Badge moved into normal flow so it won't be blocked -->
-          <div class="inline-flex items-center gap-2 px-2 py-1 bg-white rounded-full shadow-sm border border-cream-200">
-            <img src="MG_4898.jpeg" alt="Gov Approved" class="w-7 h-7 rounded-full object-cover border border-cream-100" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
-            <div class="hidden items-center justify-center w-7 h-7 bg-gold-500 text-coffee-950 rounded-full">
-              <i data-lucide="shield-check" class="w-4 h-4"></i>
-            </div>
-            <span class="text-[10px] font-bold text-coffee-900 uppercase tracking-widest pr-3">Govt Approved</span>
-          </div>
+      <!-- Badges placed first -->
+      <div class="flex flex-wrap items-center justify-center gap-3 mb-6 animate-slide-up">
+        <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-cream-200/50 border border-cream-200 text-coffee-800 text-xs font-bold uppercase tracking-wider">
+          <span class="w-2 h-2 rounded-full bg-green-500 animate-pulse"></span> Now Enrolling
         </div>
-
-        <!-- UPDATED Headline -->
-        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-coffee-950 leading-[1.15] tracking-tight mb-6">
-          Learn Today, <br class="hidden sm:block">
-          <span class="text-gold-600 font-serif italic font-normal">Lead Tomorrow.</span>
-        </h1>
-        <p class="text-base md:text-lg text-coffee-700 leading-relaxed mb-8">
-          Welcome to Sultan Hanafi Royal Schools. We provide a highly structured learning environment that seamlessly integrates the Nigerian curriculum with profound Islamic ethics, preparing your child to lead with knowledge, eloquence, and integrity.
-        </p>
         
-        <div class="flex flex-col sm:flex-row flex-wrap gap-4 items-center justify-center lg:justify-start">
-          <a href="#contact" class="w-full sm:w-auto inline-flex justify-center items-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-600 text-coffee-950 rounded-full font-bold text-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">
-            Secure a Space <i data-lucide="chevron-right" class="w-5 h-5"></i>
-          </a>
-          <div class="flex items-center gap-3 px-4 py-2 mt-2 sm:mt-0">
-             <div class="flex -space-x-3">
-                <div class="w-10 h-10 rounded-full bg-gray-300 border-2 border-white overflow-hidden"><img src="https://i.pravatar.cc/100?img=1" alt="Parent"></div>
-                <div class="w-10 h-10 rounded-full bg-gray-300 border-2 border-white overflow-hidden"><img src="https://i.pravatar.cc/100?img=2" alt="Parent"></div>
-                <div class="w-10 h-10 rounded-full bg-gray-300 border-2 border-white overflow-hidden"><img src="https://i.pravatar.cc/100?img=3" alt="Parent"></div>
-             </div>
-             <div class="text-sm font-medium text-coffee-800">
-               Trusted by <span class="font-bold text-coffee-950">500+</span> parents
-             </div>
+        <div class="inline-flex items-center gap-2 px-2 py-1 bg-white rounded-full shadow-sm border border-cream-200">
+          <img src="MG_4898.jpeg" alt="Gov Approved" class="w-7 h-7 rounded-full object-cover border border-cream-100" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="hidden items-center justify-center w-7 h-7 bg-gold-500 text-coffee-950 rounded-full">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
           </div>
+          <span class="text-[10px] font-bold text-coffee-900 uppercase tracking-widest pr-3">Govt Approved</span>
         </div>
       </div>
 
-      <!-- Multiple Moving Pictures (Cleaned up borders and sizing) -->
-      <div class="relative h-[300px] md:h-[400px] lg:h-[550px] w-full rounded-2xl bg-cream-200 overflow-hidden shadow-xl border-4 border-white animate-fade-in group mt-8 lg:mt-0">
+      <!-- Multiple Moving Pictures (Images/Video) immediately below badges -->
+      <div class="relative h-[300px] md:h-[400px] lg:h-[500px] w-full rounded-2xl bg-cream-200 overflow-hidden shadow-xl border-4 border-white animate-fade-in group mb-10">
         <div class="absolute inset-0 bg-gradient-to-t from-coffee-950/70 via-transparent to-transparent z-10 pointer-events-none"></div>
         
         <div class="hero-slider relative z-0">
@@ -181,41 +151,97 @@
           </blockquote>
         </div>
       </div>
+
+      <!-- Headline and text directly below the images -->
+      <div class="text-center max-w-3xl animate-slide-up" style="animation-delay: 0.2s;">
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-coffee-950 leading-[1.15] tracking-tight mb-6">
+          Learn Today, <br class="hidden sm:block">
+          <span class="text-gold-600 font-serif italic font-normal">Lead Tomorrow.</span>
+        </h1>
+        <p class="text-base md:text-lg text-coffee-700 leading-relaxed mb-8">
+          Welcome to Sultan Hanafi Royal Schools. We provide a highly structured learning environment that seamlessly integrates the Nigerian curriculum with profound Islamic ethics, preparing your child to lead with knowledge, eloquence, and integrity.
+        </p>
+        
+        <!-- CTA directly under the text -->
+        <a href="#contact" class="inline-flex justify-center items-center gap-2 px-8 py-4 bg-gold-500 hover:bg-gold-600 text-coffee-950 rounded-full font-bold text-lg transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5">
+          Secure a Space <i data-lucide="chevron-right" class="w-5 h-5"></i>
+        </a>
+      </div>
+
     </div>
   </header>
 
-  <!-- Trust / Philosophy Bar (Cleaned up dividers) -->
-  <section class="bg-white py-12 border-y border-cream-200">
-    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8 text-center divide-y md:divide-y-0 md:divide-x divide-cream-100">
-      <div class="p-4 md:py-0">
-        <div class="w-12 h-12 mx-auto bg-cream-50 border border-cream-100 text-gold-600 rounded-full flex items-center justify-center mb-4"><i data-lucide="book-open"></i></div>
-        <h4 class="font-bold text-coffee-950 mb-2">Integrated Curriculum</h4>
-        <p class="text-sm text-coffee-700">Bridging core Nigerian academics with comprehensive Islamic instruction.</p>
+  <!-- Meet Our School Heads Section (Vertical Layout, Landscape Images Side-by-Side) -->
+  <section id="programs" class="py-16 md:py-24 bg-cream-50 relative border-t border-cream-200">
+    <div class="max-w-5xl mx-auto px-6">
+      <div class="text-center mb-12 md:mb-16">
+        <span class="text-gold-600 font-bold tracking-widest uppercase text-xs md:text-sm mb-2 block">Our Leadership</span>
+        <h2 class="text-3xl md:text-4xl font-extrabold text-coffee-950 mb-4 tracking-tight">Guided by Experience</h2>
+        <p class="text-coffee-700 max-w-2xl mx-auto text-base md:text-lg">Our four distinct schools are led by passionate educators who ensure a meticulously structured pathway to lifelong excellence.</p>
       </div>
-      <div class="p-4 md:py-0 pt-8 md:pt-0">
-        <div class="w-12 h-12 mx-auto bg-cream-50 border border-cream-100 text-gold-600 rounded-full flex items-center justify-center mb-4"><i data-lucide="shield-check"></i></div>
-        <h4 class="font-bold text-coffee-950 mb-2">Moral Fortitude</h4>
-        <p class="text-sm text-coffee-700">A secure environment where core values and positive psychology shape student growth.</p>
-      </div>
-      <div class="p-4 md:py-0 pt-8 md:pt-0">
-        <div class="w-12 h-12 mx-auto bg-cream-50 border border-cream-100 text-gold-600 rounded-full flex items-center justify-center mb-4"><i data-lucide="users"></i></div>
-        <h4 class="font-bold text-coffee-950 mb-2">Dedicated Mentorship</h4>
-        <p class="text-sm text-coffee-700">Educators who act as guides, focusing on articulation, understanding, and flow.</p>
+
+      <div class="flex flex-col gap-6">
+        <!-- Head 1: Nursery -->
+        <div class="bg-white rounded-2xl p-6 border border-cream-200 flex flex-col md:flex-row items-center md:items-start text-center md:text-left hover:-translate-y-1 hover:shadow-lg transition-all duration-300 gap-6 md:gap-8">
+          <div class="w-full md:w-1/3 shrink-0">
+            <!-- Landscape image aspect ratio -->
+            <img src="IMG_4865.jpeg" alt="Mrs Maryam A" class="w-full aspect-video object-cover rounded-xl shadow-sm border border-cream-100" onerror="this.src='https://ui-avatars.com/api/?name=MA&background=F9F6E8&color=D4AF37'" />
+          </div>
+          <div class="flex flex-col justify-center md:py-4">
+            <h3 class="text-xl md:text-2xl font-bold text-coffee-950 mb-2">Mrs Maryam A.</h3>
+            <div><span class="text-[10px] md:text-xs font-bold text-gold-600 mb-3 uppercase tracking-widest bg-cream-50 border border-cream-100 inline-block px-3 py-1 rounded-full">Nursery & Basic</span></div>
+            <p class="text-sm md:text-base text-coffee-700 leading-relaxed mt-2">Building a solid foundation of curiosity and core moral values in a deeply nurturing space. We ensure every child receives the care and attention required to develop an early love for learning.</p>
+          </div>
+        </div>
+
+        <!-- Head 2: Royal College -->
+        <div class="bg-white rounded-2xl p-6 border border-cream-200 flex flex-col md:flex-row items-center md:items-start text-center md:text-left hover:-translate-y-1 hover:shadow-lg transition-all duration-300 gap-6 md:gap-8">
+          <div class="w-full md:w-1/3 shrink-0">
+            <!-- Landscape image aspect ratio -->
+            <img src="11c32e43-e87c-4471-89f9-40286c8823ba.jpeg" alt="Dr Musa Adegoke" class="w-full aspect-video object-cover rounded-xl shadow-sm border border-cream-100" onerror="this.src='https://ui-avatars.com/api/?name=MA&background=F9F6E8&color=D4AF37'" />
+          </div>
+          <div class="flex flex-col justify-center md:py-4">
+            <h3 class="text-xl md:text-2xl font-bold text-coffee-950 mb-2">Dr Musa Adegoke</h3>
+            <div><span class="text-[10px] md:text-xs font-bold text-gold-600 mb-3 uppercase tracking-widest bg-cream-50 border border-cream-100 inline-block px-3 py-1 rounded-full">Royal College</span></div>
+            <p class="text-sm md:text-base text-coffee-700 leading-relaxed mt-2">Fostering critical thinking, technological adaptability, and the deep integration of ethics. Students are equipped to navigate modern challenges without compromising their foundational values.</p>
+          </div>
+        </div>
+
+        <!-- Head 3: Islamic Studies -->
+        <div class="bg-white rounded-2xl p-6 border border-cream-200 flex flex-col md:flex-row items-center md:items-start text-center md:text-left hover:-translate-y-1 hover:shadow-lg transition-all duration-300 gap-6 md:gap-8">
+          <div class="w-full md:w-1/3 shrink-0">
+            <!-- Landscape image aspect ratio -->
+            <img src="IMG_3028.png" alt="Shaykh Abubakr Solah" class="w-full aspect-video object-cover rounded-xl shadow-sm border border-cream-100" onerror="this.src='https://ui-avatars.com/api/?name=AS&background=F9F6E8&color=D4AF37'" />
+          </div>
+          <div class="flex flex-col justify-center md:py-4">
+            <h3 class="text-xl md:text-2xl font-bold text-coffee-950 mb-2">Shaykh Abubakr Solah</h3>
+            <div><span class="text-[10px] md:text-xs font-bold text-gold-600 mb-3 uppercase tracking-widest bg-cream-50 border border-cream-100 inline-block px-3 py-1 rounded-full">Islamic & Arabic</span></div>
+            <p class="text-sm md:text-base text-coffee-700 leading-relaxed mt-2">Deconstructing classical texts to build articulate, visionary leaders ready for global impact. Mastery of the Arabic language serves as a gateway to profound historical and theological understanding.</p>
+          </div>
+        </div>
+
+        <!-- Head 4: Qur'an College -->
+        <div class="bg-white rounded-2xl p-6 border border-cream-200 flex flex-col md:flex-row items-center md:items-start text-center md:text-left hover:-translate-y-1 hover:shadow-lg transition-all duration-300 gap-6 md:gap-8">
+          <div class="w-full md:w-1/3 shrink-0">
+            <!-- Landscape image aspect ratio -->
+            <img src="bb8a3076-62c4-4e0d-af02-cef644a82d1c.jpeg" alt="Imam Ahmad Sulaimiy" class="w-full aspect-video object-cover rounded-xl shadow-sm border border-cream-100" onerror="this.src='https://ui-avatars.com/api/?name=AS&background=F9F6E8&color=D4AF37'" />
+          </div>
+          <div class="flex flex-col justify-center md:py-4">
+            <h3 class="text-xl md:text-2xl font-bold text-coffee-950 mb-2">Imam Ahmad Sulaimiy</h3>
+            <div><span class="text-[10px] md:text-xs font-bold text-gold-600 mb-3 uppercase tracking-widest bg-cream-50 border border-cream-100 inline-block px-3 py-1 rounded-full">Qur'an College</span></div>
+            <p class="text-sm md:text-base text-coffee-700 leading-relaxed mt-2">Dedicated to the immaculate preservation, eloquent recitation, and lifelong understanding of the Qur'an. We train students to embody the teachings of the Holy book in character and action.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Director's Message Section (De-cluttered layout) -->
+  <!-- Director's Message Section (Text first, Image second) -->
   <section id="speech" class="py-16 md:py-24 bg-coffee-950 text-cream-50">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center">
       
-      <!-- Director Image -->
-      <div class="order-2 lg:order-1 relative max-w-md mx-auto w-full">
-        <img src="bdba8e8b-ef4a-47c9-8ef2-7aebc76c22c2.jpeg" alt="Zakariya Olanrewaju Anofi" class="w-full aspect-[4/5] object-cover rounded-2xl shadow-xl border border-coffee-800" onerror="this.src='https://ui-avatars.com/api/?name=ZA&background=D4AF37&color=fff&size=512'" />
-      </div>
-
-      <!-- Speech Content -->
-      <div class="order-1 lg:order-2 space-y-6 md:space-y-8 text-center lg:text-left">
+      <!-- Speech Content (Placed First) -->
+      <div class="order-1 lg:order-1 space-y-6 md:space-y-8 text-center lg:text-left">
         <div>
           <span class="text-gold-400 font-bold tracking-widest uppercase text-xs md:text-sm mb-2 block">Director's Message</span>
           <h2 class="text-3xl md:text-4xl font-extrabold text-white font-serif leading-tight">Welcome to Sultan Hanafi Royal Schools</h2>
@@ -250,59 +276,12 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
 
-  <!-- Meet Our School Heads Section (Cleaned up cards) -->
-  <section id="programs" class="py-16 md:py-24 bg-cream-50 relative">
-    <div class="max-w-7xl mx-auto px-6">
-      <div class="text-center mb-12 md:mb-16">
-        <span class="text-gold-600 font-bold tracking-widest uppercase text-xs md:text-sm mb-2 block">Our Leadership</span>
-        <h2 class="text-3xl md:text-4xl font-extrabold text-coffee-950 mb-4 tracking-tight">Guided by Experience</h2>
-        <p class="text-coffee-700 max-w-2xl mx-auto text-base md:text-lg">Our four distinct schools are led by passionate educators who ensure a meticulously structured pathway to lifelong excellence.</p>
+      <!-- Director Image (Placed Second) -->
+      <div class="order-2 lg:order-2 relative max-w-md mx-auto w-full">
+        <img src="bdba8e8b-ef4a-47c9-8ef2-7aebc76c22c2.jpeg" alt="Zakariya Olanrewaju Anofi" class="w-full aspect-[4/5] object-cover rounded-2xl shadow-xl border border-coffee-800" onerror="this.src='https://ui-avatars.com/api/?name=ZA&background=D4AF37&color=fff&size=512'" />
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-        <!-- Head 1: Nursery -->
-        <div class="bg-white rounded-2xl p-6 md:p-8 border border-cream-200 text-center hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-          <div class="w-24 h-24 md:w-28 md:h-28 mx-auto mb-6">
-            <img src="IMG_4865.jpeg" alt="Mrs Maryam A" class="w-full h-full rounded-full object-cover shadow-sm border-2 border-cream-100" onerror="this.src='https://ui-avatars.com/api/?name=MA&background=F9F6E8&color=D4AF37'" />
-          </div>
-          <h3 class="text-lg md:text-xl font-bold text-coffee-950 mb-1">Mrs Maryam A.</h3>
-          <p class="text-[10px] md:text-xs font-bold text-gold-600 mb-4 uppercase tracking-widest bg-cream-50 border border-cream-100 inline-block px-3 py-1 rounded-full">Nursery & Basic</p>
-          <p class="text-sm text-coffee-700 leading-relaxed">Building a solid foundation of curiosity and core moral values in a deeply nurturing space.</p>
-        </div>
-
-        <!-- Head 2: Royal College -->
-        <div class="bg-white rounded-2xl p-6 md:p-8 border border-cream-200 text-center hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-          <div class="w-24 h-24 md:w-28 md:h-28 mx-auto mb-6">
-            <img src="11c32e43-e87c-4471-89f9-40286c8823ba.jpeg" alt="Dr Musa Adegoke" class="w-full h-full rounded-full object-cover shadow-sm border-2 border-cream-100" onerror="this.src='https://ui-avatars.com/api/?name=MA&background=F9F6E8&color=D4AF37'" />
-          </div>
-          <h3 class="text-lg md:text-xl font-bold text-coffee-950 mb-1">Dr Musa Adegoke</h3>
-          <p class="text-[10px] md:text-xs font-bold text-gold-600 mb-4 uppercase tracking-widest bg-cream-50 border border-cream-100 inline-block px-3 py-1 rounded-full">Royal College</p>
-          <p class="text-sm text-coffee-700 leading-relaxed">Fostering critical thinking, technological adaptability, and the deep integration of ethics.</p>
-        </div>
-
-        <!-- Head 3: Islamic Studies -->
-        <div class="bg-white rounded-2xl p-6 md:p-8 border border-cream-200 text-center hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-          <div class="w-24 h-24 md:w-28 md:h-28 mx-auto mb-6">
-            <img src="IMG_3028.png" alt="Shaykh Abubakr Solah" class="w-full h-full rounded-full object-cover shadow-sm border-2 border-cream-100" onerror="this.src='https://ui-avatars.com/api/?name=AS&background=F9F6E8&color=D4AF37'" />
-          </div>
-          <h3 class="text-lg md:text-xl font-bold text-coffee-950 mb-1">Shaykh Abubakr Solah</h3>
-          <p class="text-[10px] md:text-xs font-bold text-gold-600 mb-4 uppercase tracking-widest bg-cream-50 border border-cream-100 inline-block px-3 py-1 rounded-full">Islamic & Arabic</p>
-          <p class="text-sm text-coffee-700 leading-relaxed">Deconstructing classical texts to build articulate, visionary leaders ready for global impact.</p>
-        </div>
-
-        <!-- Head 4: Qur'an College -->
-        <div class="bg-white rounded-2xl p-6 md:p-8 border border-cream-200 text-center hover:-translate-y-1 hover:shadow-lg transition-all duration-300">
-          <div class="w-24 h-24 md:w-28 md:h-28 mx-auto mb-6">
-            <img src="bb8a3076-62c4-4e0d-af02-cef644a82d1c.jpeg" alt="Imam Ahmad Sulaimiy" class="w-full h-full rounded-full object-cover shadow-sm border-2 border-cream-100" onerror="this.src='https://ui-avatars.com/api/?name=AS&background=F9F6E8&color=D4AF37'" />
-          </div>
-          <h3 class="text-lg md:text-xl font-bold text-coffee-950 mb-1">Imam Ahmad Sulaimiy</h3>
-          <p class="text-[10px] md:text-xs font-bold text-gold-600 mb-4 uppercase tracking-widest bg-cream-50 border border-cream-100 inline-block px-3 py-1 rounded-full">Qur'an College</p>
-          <p class="text-sm text-coffee-700 leading-relaxed">Dedicated to the immaculate preservation, eloquent recitation, and lifelong understanding of the Qur'an.</p>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -360,8 +339,8 @@
           <h4 class="text-sm font-bold text-gold-500 uppercase tracking-widest">Quick Links</h4>
           <div class="flex flex-col space-y-3 text-sm">
             <a href="#welcome" class="hover:text-gold-400 transition-colors">Our Ethos</a>
-            <a href="#speech" class="hover:text-gold-400 transition-colors">Director's Message</a>
             <a href="#programs" class="hover:text-gold-400 transition-colors">Leadership Team</a>
+            <a href="#speech" class="hover:text-gold-400 transition-colors">Director's Message</a>
             <a href="#contact" class="hover:text-gold-400 transition-colors">Admissions Portal</a>
           </div>
         </div>
